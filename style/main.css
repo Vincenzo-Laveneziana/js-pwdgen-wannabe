@@ -1,3 +1,154 @@
-body{
-  background: lightgrey;
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+
+/* General */
+body{
+  font-family: 'Open Sans', sans-serif;
+  background: #2e2e2e;
+  height: 100vh;
+}
+
+main{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box{
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  min-height: 400px;
+  background: #e6e6e6;
+  border-radius: 15px;
+  border: 4px solid black;
+  text-align: center;
+  padding: 10px;
+}
+
+.saluti{
+  width: 100%;
+  height: 25%;
+}
+
+.saluti p{
+  margin: 0 auto;
+  width: 75%;
+  font-weight: 400;
+}
+
+.view{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  position: relative;
+}
+
+.view span{
+  position: relative;
+  z-index: 1;
+}
+
+.ex-13-button {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 70px;
+  text-transform: capitalize;
+  border: 3px solid #4d4d4d;
+  color: #ff0000;
+  font-size: 20px;
+  text-decoration: none;
+  margin-top: 25px;
+  padding: 0 10px;
+}
+
+.ex-13-top-white {
+  position: absolute;
+  top: -10px;
+  left: 10%;
+  background: #e6e6e6;
+  width: 60px;
+  height: 30px;
+}
+
+.ex-13-bottom-white {
+  position: absolute;
+  bottom: -10px;
+  right: 20%;
+  background: #e6e6e6;
+  width: 60px;
+  height: 30px;
+}
+
+
+.ex-13-button .ex-13-top-white {
+  animation: movetop-13 2s infinite linear;
+}
+
+@keyframes movetop-13{
+  0% {
+    left: 10%;
+    top: -10px;
+  }
+  20% {
+    left: calc(100% - 30px);
+    top: -10px;
+  }
+  40% {
+    left: calc(100% - 30px);
+    top: 100%;
+  }
+  60% {
+    left: 0;
+    top: 100%;
+  }
+  80% {
+    left: -15px;
+    top: -10px;
+  }
+  100% {
+    left: 10%;
+    top: -10px;
+  }
+}
+
+.ex-13-button .ex-13-bottom-white {
+  animation: movebot-13 2s infinite linear;
+}
+
+@keyframes movebot-13{
+  0% {
+    right: 20%;
+    bottom: -10px;
+  }
+  20% {
+    right: calc(100% - 30px);
+    bottom: -10px;
+  }
+  40% {
+    right: calc(100% - 30px);
+    bottom: 100%;
+  }
+  60% {
+    right: 0;
+    bottom: 100%;
+  }
+  80% {
+    right: -15px;
+    bottom: -10px;
+  }
+  100% {
+    bottom: -10px;
+    right: 20%;
+  }
+}
+
+
