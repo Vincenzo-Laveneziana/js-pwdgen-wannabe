@@ -1,4 +1,4 @@
-/* 
+
 //chiedere all’utente il suo nome e poi memorizzarlo
 var nome=prompt("Inserisci il tuo nome")
 console.log(nome);
@@ -21,4 +21,4 @@ var intero= 20;
 
 //in fine scrivere nella pagina le informazioni ottenuti dall’utente, nel formato: 
 
-document.getElementById("visualizza").innerHTML= nome + cognome + colore + intero; */
+document.getElementById("visualizza").innerHTML= nome + cognome + colore + intero;
